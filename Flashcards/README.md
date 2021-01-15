@@ -12,5 +12,3 @@ You will see how these two technologies can help you build a simple web page wit
 # This project is a part of the following track
 ## Web Developer
 
-
-![Video](https://stepik.org/media/attachments/lesson/384602/demonstration.mp4)
