@@ -1,0 +1,82 @@
+body {
+    background: url("images/world (1).png");
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 25px;
+    padding: 1em;
+    width: 35%;
+    margin-left: 30%;
+
+}
+
+
+h1 {
+    align-self: center;
+    font-family: "Permanent Marker", cursive;
+}
+.content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns:repeat(3, 2fr);
+    grid-auto-rows: 2fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    padding: 2em;
+    height: 500px;
+    width: 500px;
+    margin-left: 30%;
+
+}
+
+.container:nth-child(1n):hover .flip-card{
+    transform: rotateY(180deg);
+
+}
+
+
+.flip-card {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+
+.card-front ,
+.card-back {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "Lobster", cursive;
+    border-radius: 20px;
+    position: absolute;
+
+}
+.card-front {
+    background: linear-gradient(#08aeea, #2af598);
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.card-back {
+    background: linear-gradient(#f8da61, #ff5acd);
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.container {
+    perspective: 500px;
+}
